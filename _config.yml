@@ -21,7 +21,7 @@ last_updated: # leave blank if you don't want to display last updated
 # -----------------------------------------------------------------------------
 # KU Leuven integration
 # -----------------------------------------------------------------------------
-ku_leuven_personnel_number: 0XXXXXX
+ku_leuven_personnel_number: "0XXXXXX"
 
 teaching:
 - period: 2017-2019
