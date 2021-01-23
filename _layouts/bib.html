@@ -61,6 +61,7 @@
   {% endif %}
 
   <span class="links">
+  [<a class="bibtex">Bib</a>]
   {% if entry.abstract %}
     [<a class="abstract">Abs</a>]
   {% endif %}
@@ -82,10 +83,20 @@
   {% if entry.slides %}
     [<a href="{{ entry.slides | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Slides</a>]
   {% endif %}
+  {% if entry.video %}
+    [<a href="{{ entry.video }}" target="_blank">Video</a>]
+  {% endif %}
   {% if entry.code %}
     [<a href="{{ entry.code }}" target="_blank">Code</a>]
   {% endif %}
   </span>
+
+
+  <!-- Hidden citation block -->
+  <span class="bibtex hidden">
+    <p>{{ entry.bibtex }}</p>
+  </span>
+
 
   <!-- Hidden abstract block -->
   {% if entry.abstract %}
@@ -93,4 +104,6 @@
     <p>{{ entry.abstract }}</p>
   </span>
   {% endif %}
+
+
 </div>
