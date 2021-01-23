@@ -63,6 +63,7 @@
             }
         }
         .hidden.open {
+            white-space: pre-line;
             max-height: 100em;
             -webkit-transition: 0.15s ease;
             -moz-transition: 0.15s ease;

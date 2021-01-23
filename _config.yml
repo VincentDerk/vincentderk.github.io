@@ -23,14 +23,6 @@ last_updated: # leave blank if you don't want to display last updated
 # -----------------------------------------------------------------------------
 ku_leuven_personnel_number: "0124251"
 
-teaching:
-- period: 2018-2020
-  course: Databases
-  note: An introduction to database theory
-- period: 2019-2020
-  course: Logics for informatics
-  note: Introducing logic to informatic students
-
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
@@ -43,7 +35,7 @@ medium_username: # your Medium username
 quora_username: # your Quora username
 
 contact_note: >
-  You can reach me on firstname.lastname@cs.kuleuven.be
+  You can reach me on firstname.lastname@kuleuven.be
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 
@@ -74,7 +66,7 @@ highlighter: rouge #pygments
 
 # Includes & excludes
 include: ['_pages']
-exclude: [vendor]
+exclude: [vendor, bin]
 
 # Plug-ins
 plugins:
@@ -83,6 +75,26 @@ plugins:
     - jekyll/scholar
     - jemoji
 
+# -----------------------------------------------------------------------------
+# Scholar settings
+# -----------------------------------------------------------------------------
+use_scholar: false # Set this to true if you want to use jekyll-scholar instead of Lirias.
+
+scholar:
+    sort_by: year, month
+    last_name: Lastname # Your last name, this enables underlining your name in your publications
+    order: descending
+    bibliography_template: bib
+    bibtex_skip_fields: 
+     - abstract
+     - month_numeric
+     - code
+     - pdf
+     - supp
+     - slides
+     - poster
+     - arxiv
+     - video
 
 # -----------------------------------------------------------------------------
 # Other settings

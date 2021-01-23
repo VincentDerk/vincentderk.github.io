@@ -24,13 +24,15 @@
         <!-- About -->
         <a class="page-link" href="{{ site.baseurl | prepend: site.url }}/">about</a>
 
-        <a class="page-link" href="{{ site.ku_leuven_personnel_number | prepend: 'http://lirias.kuleuven.be/cv?Username=u' }}" target="_blank">publications</a>
-        <!-- Projects -->
-        <a class="page-link" href="{{ '/projects/' | prepend: site.baseurl | prepend: site.url }}">projects</a>
+        {% if site.use_scholar %}
+            <a class="page-link" href="{{ '/publications/' | prepend: site.baseurl | prepend: site.url }}">publications</a>
+        {% else %}
+            <a class="page-link" href="{{ '/lirias/' | prepend: site.baseurl | prepend: site.url }}">publications</a>
+        {% endif %}
 
         <!-- Pages -->
         {% for page in site.pages %}
-          {% if page.title and page.url != "/" %}
+          {% if page.title and page.url != "/" and page.title != "publications" %}
             <a class="page-link" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
