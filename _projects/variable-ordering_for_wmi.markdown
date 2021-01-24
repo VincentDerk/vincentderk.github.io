@@ -1,6 +1,6 @@
 ---
 layout: page
 title: Variable ordering for WMI
-description: On improving the variable ordering heuristics in weighted model integration (WMI), yielding faster exact probabilistic inference for discrete-continuous variables problems.
+description: On improving the variable ordering heuristics in weighted model integration (WMI), yielding faster exact probabilistic inference for discrete-continuous variables problems. ([Source code](https://github.com/VincentDerk/BU-MiF))
 redirect: https://github.com/weighted-model-integration/pywmi
 ---
