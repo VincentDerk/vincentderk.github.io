@@ -1,16 +1,53 @@
 ---
 layout: page
-permalink: /teaching/
-title: teaching
+permalink: /activities/
+title: activities
 ---
 
+	<h3 id="organised">Organisor</h3>
+		<div>2022 <span class="p-text-color">As workflow chair of the <b>IJCAI-ECAI2022</b> conference, I helped process over 4000 paper submissions.</span></div>
+
+{% if site.data.teaching.pcmember.pcmember and site.data.teaching.pcmember.pcmember.size>0 %}
+    <h3 id="pcm">Program committee member</h3>
+	
+	{% for job in site.data.teaching.pcmember.pcmember %}
+	<div>
+  		 <a href="{{job.url}}">{{ job.abbreviation }}</a> {{ job.name}}
+		{% for entry in job.entries %}
+			<p>{{ entry.description }} - {{ entry.years | join: ', ' }}</p>
+		{% endfor %}
+	</div>
+	{% endfor %}
+{% endif %}
+
+
+	<h3 id="awards">Awards</h3>
+		<div>2023 <span class="p-text-color"> I received a top reviewer award at UAI2023!</span></div>
+		<div>2019 <span class="p-text-color"> The <a href="https://www.fwo.be/en/">FWO</a> granted me a personal 4-year PhD fellowship!</span></div>
+
+
+{% if site.data.teaching.seminars and site.data.teaching.seminars.size>0 %}
+    <h3> Seminars </h3>
+    {% for item in site.data.teaching.seminars %}
+        <div>
+            <em>{{ item.date }}</em>:
+            <strong> {{item.title}} </strong>
+             <p>
+                 @<a href="{{item.venue_url}}">{{item.venue}}</a>
+
+                 {% if item.description %}<br>
+                     {{ item.description }}
+                 {% endif %}
+             </p> 
+        </div>
+    {% endfor %}
+{% endif %}
+
 {% if site.data.teaching.ta and site.data.teaching.ta.size>0 %}
-
-    <h3> Teaching Assistant </h3>
-
+    <h3 id="ta">Teaching</h3>
     {% for item in site.data.teaching.ta %}
       <div>
-        <em>{{ item.period }}</em>:
+        {{ item.period }}
         <strong>
             <a href="{{item.url}}">{{ item.course }}</a>
         </strong>
@@ -26,34 +63,12 @@ title: teaching
 
 
 {% if site.data.teaching.thesis and site.data.teaching.thesis.size>0 %}
-
-    <h3> Thesis Advisor </h3>
-
-    <ul>
+    <h3 id="advisor">Thesis Advisor</h3>
     {% for item in site.data.teaching.thesis %}
-        <li> <em>{{item.student}}</em>: {{item.topic}} </li>
-    {% endfor %}
-    </ul>
-{% endif %}
-
-
-{% if site.data.teaching.seminars and site.data.teaching.seminars.size>0 %}
-    <h3> Seminars </h3>
-
-
-    {% for item in site.data.teaching.seminars %}
-        <div>
-            <em>{{ item.date }}</em>:
-            <strong> {{item.title}} </strong>
-             <p>
-                 @<a href="{{item.venue_url}}">{{item.venue}}</a>
-
-                 {% if item.description %}<br>
-                     {{ item.description }}
-                 {% endif %}
-             </p> 
-        </div>
+        <div>{{item.period}} <span class="p-text-color">{{item.topic}} </span></div>
     {% endfor %}
 {% endif %}
+
+
 
 
