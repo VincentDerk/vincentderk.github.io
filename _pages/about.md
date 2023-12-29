@@ -16,9 +16,11 @@ social: true
 
 Hi, 
 
-I'm a PhD student of <a href="https://wms.cs.kuleuven.be/people/lucderaedt/" target="blank_">Luc De Raedt</a> and part of the <a href="https://dtai.cs.kuleuven.be/" target="_blank">DTAI</a> research group at <a href="https://www.kuleuven.be/kuleuven/" target="_blank">KU Leuven</a>.
+I am a postdoctoral researcher in the area of artificial intelligence (AI).
 
-My primary research activities revolve around knowledge compilation, a research area within artificial intelligence (AI) that studies the transformation of knowledge into target representations more suitable for (AI) inference tasks. I am specifically interested in the application of this domain on probabilistic inference tasks, and decision making under uncertainty.
+My primary research activities revolve around knowledge compilation, the area within AI that studies the transformation of knowledge into target representations more suitable for (AI) inference tasks. I am specifically interested in the application of this domain on probabilistic inference tasks.
+
+I obtained my PhD in Dec 2023, in the group of Prof. <a href="https://wms.cs.kuleuven.be/people/lucderaedt/" target="blank_">Luc De Raedt</a> (the <a href="https://dtai.cs.kuleuven.be/" target="_blank">DTAI</a> research group at <a href="https://www.kuleuven.be/kuleuven/" target="_blank">KU Leuven</a>). I am currently a postdoctoral researcher in the same group.
 
 
 You can find additional information on my [projects page](/projects/), and on <a class="page-link" href="{{ site.ku_leuven_personnel_number | prepend: 'https://www.kuleuven.be/wieiswie/en/person/0' }}">KU Leuven who's who page.</a>
