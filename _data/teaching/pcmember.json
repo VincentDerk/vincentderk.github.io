@@ -1,6 +1,24 @@
 {
   "pcmember": [
     {
+      "name": "European Conference on Machine Learning and Data Mining",
+	  "abbreviation": "ECMLPKDD",
+      "url": "https://ecmlpkdd.org/",
+	  "entries": [{
+		"description": "reviewed",
+		"years": [2024]	
+		}]
+    },
+    {
+      "name": "Conference on Uncertainty in Artificial Intelligence",
+	  "abbreviation": "UAI",
+      "url": "https://www.auai.org/",
+	  "entries": [{
+		  "description": "PC member",
+		  "years": [2021, 2022, 2023, 2024]
+		}]
+    },
+    {
       "name": "Journal of Machine Learning Research",
 	  "abbreviation": "JMLR",
       "url": "https://jmlr.csail.mit.edu/",
@@ -25,15 +43,6 @@
 	  "entries": [{
       "description": "Workflow Chair",
       "years": [2022]
-		}]
-    },
-    {
-      "name": "Conference on Uncertainty in Artificial Intelligence",
-	  "abbreviation": "UAI",
-      "url": "https://www.auai.org/",
-	  "entries": [{
-		  "description": "PC member",
-		  "years": [2021, 2022, 2023]
 		}]
     },
     {
