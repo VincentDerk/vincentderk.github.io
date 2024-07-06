@@ -1,6 +1,24 @@
 {
   "pcmember": [
     {
+      "name": "International Conference on Principles of Knowledge Representation and Reasoning",
+	  "abbreviation": "KR",
+      "url": "https://kr.org/KR2024/",
+	  "entries": [{
+		"description": "PC member",
+		"years": [2024]	
+		}]
+    },
+    {
+      "name": "European Conference on Artificial Intelligence",
+	  "abbreviation": "ECAI",
+      "url": "https://ecai2024.eu/",
+	  "entries": [{
+    	  "description": "PC member",
+	      "years": [2023,2024]
+		}]
+    },
+    {
       "name": "European Conference on Machine Learning and Data Mining",
 	  "abbreviation": "ECMLPKDD",
       "url": "https://ecmlpkdd.org/",
@@ -27,15 +45,6 @@
 		"years": [2023]	
 		}]
 	},
-    {
-      "name": "European Conference on Artificial Intelligence",
-	  "abbreviation": "ECAI",
-      "url": "https://ecai2023.eu/",
-	  "entries": [{
-    	  "description": "PC member",
-	      "years": [2023]
-		}]
-    },
     {
       "name": "International Joint Conference on Artificial Intelligence",
 	  "abbreviation": "IJCAI-ECAI",
