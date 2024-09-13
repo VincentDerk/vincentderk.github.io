@@ -5,18 +5,18 @@ first_name: Vincent
 last_name: Derkinderen
 email: firstname.lastname@cs.kuleuven.be
 description: > # this means to ignore newlines until "url:"
-  KU Leuven PhD researcher at the DTAI research group.
+  KU Leuven postdoctoral researcher at the DTAI research group.
 footer_text: > # Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   <a href="https://dtai.cs.kuleuven.be/" target="_blank">DTAI</a>.
   <a href="https://www.kuleuven.be/kuleuven/" target="_blank">KU Leuven</a>.
   
 
-show_news: False
+show_news: true
 show_address: true
  
 url:  # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
-last_updated: # leave blank if you don't want to display last updated
+last_updated: 09/2024 # leave blank if you don't want to display last updated
 
 # -----------------------------------------------------------------------------
 # KU Leuven integration
@@ -51,7 +51,7 @@ collections:
     output: true
     permalink: /news/:path/
   projects:
-    output: true
+    output: false
     permalink: /projects/:path/
 
 news_limit: 5

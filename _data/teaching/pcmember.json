@@ -1,6 +1,15 @@
 {
   "pcmember": [
     {
+      "name": "International Joint Conference on Learning & Reasoning",
+	  "abbreviation": "IJCLR",
+      "url": "https://www.lamda.nju.edu.cn/ijclr24/",
+	  "entries": [{
+		"description": "PC member",
+		"years": [2024]	
+		}]
+    },
+    {
       "name": "International Conference on Principles of Knowledge Representation and Reasoning",
 	  "abbreviation": "KR",
       "url": "https://kr.org/KR2024/",
